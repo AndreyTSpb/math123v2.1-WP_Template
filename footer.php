@@ -80,6 +80,9 @@
                 </a>
             </div>
         </div>
+        <div class="footer-wrap">
+            <?php get_template_part( 'template-parts/footer/menu' ); ?>
+        </div>
     </footer>
 
     <!-- Footer Mobile -->
