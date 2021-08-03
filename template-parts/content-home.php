@@ -94,10 +94,10 @@ echo apply_filters('the_content', get_post_meta($post->ID, 'zapis_v_grupu', true
 
             <?php endif;?>
             <div class="about-us-napravlenia-buttons">
-                <a href="#" class="btn-subject math">математика</a>
-                <a href="#" class="btn-subject phyth">физика</a>
-                <a href="#" class="btn-subject prog">программирование</a>
-                <a href="#" class="btn-subject biznes">бизнес-курс</a>
+                <a href="/napravleniya/math/" class="btn-subject math">математика</a>
+                <a href="/napravleniya/olimpiadnay_fizika/" class="btn-subject phyth">физика</a>
+                <a href="/napravleniya/prog/" class="btn-subject prog">программирование</a>
+                <a href="/napravleniya/biznes/" class="btn-subject biznes">бизнес-курс</a>
             </div>
         </div>
     </section>
