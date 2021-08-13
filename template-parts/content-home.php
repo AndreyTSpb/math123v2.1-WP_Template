@@ -11,6 +11,7 @@
  */
 //слайдер
 echo apply_filters('the_content', get_post_meta($post->ID, 'slider', true));
+
 //запись в группы
 echo apply_filters('the_content', get_post_meta($post->ID, 'zapis_v_grupu', true));
 ?>
