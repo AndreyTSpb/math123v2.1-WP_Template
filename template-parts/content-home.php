@@ -22,60 +22,78 @@ echo apply_filters('the_content', get_post_meta($post->ID, 'zapis_v_grupu', true
             <div class="about-us-text">
                 <?=get_field('about_us')['obshhee_opisanie'];?>
             </div>
+
             <div class="about-us-circles row-3">
-                <div class="about-us-circle yelow-frame radius">
+
+                <a href="<?=get_field('about_us')['link_cyrcle_1']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/lamp-1.png" alt="" srcset="">
                     <p>развиваем интеллект <br>и мышление</p>
-                </div>
-                <div class="about-us-circle yelow-frame radius">
+                </a>
+                
+                <a href="<?=get_field('about_us')['link_cyrcle_2']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/uspeh.png" alt="" srcset="" style="width: 54px; height: 55px;">
                     <p>перспектива успеха</p>
-                </div>
-                <div class="about-us-circle yelow-frame radius">
+                </a>
+                
+                <a href="<?=get_field('about_us')['link_cyrcle_3']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/oculus.png" alt="" srcset="" style="width: 91px; height: 36px; margin-top: 10px;">
                     <p>увлеченные преподаватели</p>
-                </div>
+                </a>
+                
             </div>
+
             <div class="about-us-circles row-2">
-                <div class="about-us-circle yelow-frame radius" style="justify-self: end;">
+                
+                <a href="<?=get_field('about_us')['link_cyrcle_4']['url'];?>" class="about-us-circle yelow-frame radius" style="justify-self: end;">
                     <img src="<?php bloginfo('template_url');?>/assets/img/finger.png" alt="" srcset="" style="width: 43px; height: 40px;">
                     <p>более <br>2000 детей <br>30 площадок</p>
-                </div>
-                <div class="about-us-circle yelow-frame radius" style="justify-self: start;">
+                </a>
+                
+                <a href="<?=get_field('about_us')['link_cyrcle_5']['url'];?>" class="about-us-circle yelow-frame radius" style="justify-self: start;">
                     <img src="<?php bloginfo('template_url');?>/assets/img/cup.png" alt="" srcset="" style="width: 49px; height: 51px;">
                     <p>организатор <br>городских <br>олипиад</p>
-                </div>
+                </a>
+
             </div>
 
             <div class="about-us-circles-567 row-2">
-                <div class="about-us-circle yelow-frame radius">
+                
+                <a href="<?=get_field('about_us')['link_cyrcle_1']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/lamp-1.png" alt="" srcset="" style="width: 49px; height: 51px;">
                     <p>развиваем интеллект <br>и мышление</p>
-                </div>
-                <div class="about-us-circle yelow-frame radius">
+                </a>
+                
+                <a href="<?=get_field('about_us')['link_cyrcle_2']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/uspeh.png" alt="" srcset="" style="width: 49px; height: 51px;">
                     <p>перспектива успеха</p>
-                </div>
+                </a>
+                
             </div>
 
             <div class="about-us-circles-567 row-1">
-                <div class="about-us-circle yelow-frame radius">
+                
+                <a href="<?=get_field('about_us')['link_cyrcle_3']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/oculus.png" alt="" srcset="" style="width: 91px; height: 36px; margin-top: 10px;">
                     <p>увлеченные преподаватели</p>
-                </div>
+                </a>
+
             </div>
 
             <div class="about-us-circles-567 row-2">
-                <div class="about-us-circle yelow-frame radius" >
+                
+                <a href="<?=get_field('about_us')['link_cyrcle_4']['url'];?>" class="about-us-circle yelow-frame radius" >
                     <img src="<?php bloginfo('template_url');?>/assets/img/finger.png" alt="" srcset="" style="width: 49px; height: 51px;">
                     <p>более <br>2000 детей <br>30 площадок</p>
-                </div>
-                <div class="about-us-circle yelow-frame radius">
+                </a>
+                <?php $c5 = get_field('about_us')['link_cyrcle_5']['url'];?>
+                <a href="<?=$c5['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/cup.png" alt="" srcset="" style="width: 49px; height: 51px;">
                     <p>организатор <br>городских <br>олипиад</p>
-                </div>
+                </a>
+
             </div>
 
+            <!-- Vilka napravlenyy -->
             <?php if(!empty(get_field('about_us')['vilka_napravlenij'])):?>
 
                 <div class="about-us-napravlenia">
@@ -94,6 +112,8 @@ echo apply_filters('the_content', get_post_meta($post->ID, 'zapis_v_grupu', true
                 </div>
 
             <?php endif;?>
+            
+            <!-- Perehod na napravlenya-->
             <div class="about-us-napravlenia-buttons">
                 <a href="/napravleniya/math/" class="btn-subject math">математика</a>
                 <a href="/napravleniya/olimpiadnay_fizika/" class="btn-subject phyth">физика</a>
