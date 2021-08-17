@@ -180,7 +180,8 @@ $class_modifikator = get_field('vybor_napravleniya');
                         'title'     => $post->post_title,
                         'desc'      => $post->post_excerpt,
                         'url'       => $post->guid,
-                        'img'       => $thumb
+                        'img'       => $thumb,
+                        'btn-rec'   => get_post_meta( $post->ID, 'short-code', true )
                     );
 
                 }
@@ -200,7 +201,7 @@ $class_modifikator = get_field('vybor_napravleniya');
                                 </p>
                             </div>
                             <div class="button">
-                                <a href="#" class="btn-sub <?=$btn_color?> text-white">записаться</a>
+                                <?=(!empty($item['btn-rec']))?do_shortcode($item['btn-rec']):'';?>
                             </div>
                         </div>
                     <?php endforeach;?>
@@ -292,7 +293,8 @@ $class_modifikator = get_field('vybor_napravleniya');
                         'title'     => $post->post_title,
                         'desc'      => $post->post_excerpt,
                         'url'       => $post->guid,
-                        'img'       => $thumb
+                        'img'       => $thumb,
+                        'btn-rec'   => get_post_meta( $post->ID, 'short-code', true )
                     );
 
                 }
@@ -335,7 +337,7 @@ $class_modifikator = get_field('vybor_napravleniya');
                                 </p>
                             </div>
                             <div class="button">
-                                <a href="#" class="btn-sub white">записаться</a>
+                                <?=(!empty($item['btn-rec']))?do_shortcode($item['btn-rec']):'';?>
                             </div>
                         </div>
                     <?php endforeach;?>

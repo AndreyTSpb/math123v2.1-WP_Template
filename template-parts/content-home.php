@@ -27,7 +27,7 @@ echo apply_filters('the_content', get_post_meta($post->ID, 'zapis_v_grupu', true
 
                 <a href="<?=get_field('about_us')['link_cyrcle_1']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/lamp-1.png" alt="" srcset="">
-                    <p>развиваем интеллект <br>и мышление</p>
+                    <p>развитие интеллекта<br> и мышление</p>
                 </a>
                 
                 <a href="<?=get_field('about_us')['link_cyrcle_2']['url'];?>" class="about-us-circle yelow-frame radius">
@@ -60,7 +60,7 @@ echo apply_filters('the_content', get_post_meta($post->ID, 'zapis_v_grupu', true
                 
                 <a href="<?=get_field('about_us')['link_cyrcle_1']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/lamp-1.png" alt="" srcset="" style="width: 49px; height: 51px;">
-                    <p>развиваем интеллект <br>и мышление</p>
+                    <p>развитие интеллекта<br> и мышление</p>
                 </a>
                 
                 <a href="<?=get_field('about_us')['link_cyrcle_2']['url'];?>" class="about-us-circle yelow-frame radius">
