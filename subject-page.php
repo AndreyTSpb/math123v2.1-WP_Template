@@ -92,6 +92,7 @@ $class_modifikator = get_field('vybor_napravleniya');
                 <?php endif;?>
             </div>
         </div>
+        <div class="slider-hr"></div>
 
         <!-- Открытое направление -->
         <div class="<?=(!empty($class_modifikator))?$class_modifikator:'phyth';?>-open">
@@ -181,6 +182,7 @@ $class_modifikator = get_field('vybor_napravleniya');
                         'desc'      => $post->post_excerpt,
                         'url'       => $post->guid,
                         'img'       => $thumb,
+                        'klass'     => get_post_meta( $post->ID, 'klass', true ),
                         'btn-rec'   => get_post_meta( $post->ID, 'short-code', true )
                     );
 
@@ -194,11 +196,12 @@ $class_modifikator = get_field('vybor_napravleniya');
                         <div class="card-base-type-groups <?=(!empty($class_modifikator))?$class_modifikator:'phyth';?>">
                             <?=(!empty($item['img']))?$item['img']:'<img src="https://via.placeholder.com/420x280">'?>
                             <h4><?=(!empty($item['title']))?$item['title']:'no title';?></h4>
-                            <div class="card-base-type-groups-klass">для 3-4 класса</div>
+                            <div class="card-base-type-groups-klass"><?=(!empty($item['klass']))?$item['klass']:'';?></div>
                             <div class="card-base-type-groups-desc">
                                 <p>
-                                    <?=(!empty($item['desc']))?$item['desc']:'no description';?> <?=(!empty($item['url']))?'<a href="'.$item['url'].'">подробнее.</a>' :'';?>
+                                    <?=(!empty($item['desc']))?$item['desc']:'no description';?>
                                 </p>
+                                <?=(!empty($item['url']))?'<a href="'.$item['url'].'">подробнее</a>' :'';?>
                             </div>
                             <div class="button">
                                 <?=(!empty($item['btn-rec']))?do_shortcode($item['btn-rec']):'';?>
@@ -333,8 +336,9 @@ $class_modifikator = get_field('vybor_napravleniya');
                             <div class="card-base-<?=$block_color;?>-klass">для 3-4 класса</div>
                             <div class="card-base-<?=$block_color;?>-desc">
                                 <p>
-                                    <?=(!empty($item['desc']))?$item['desc']:'no description';?> <?=(!empty($item['url']))?'<a href="'.$item['url'].'">подробнее.</a>' :'';?>
+                                    <?=(!empty($item['desc']))?$item['desc']:'no description';?>
                                 </p>
+                                <?=(!empty($item['url']))?'<a href="'.$item['url'].'">подробнее</a>' :'';?>
                             </div>
                             <div class="button">
                                 <?=(!empty($item['btn-rec']))?do_shortcode($item['btn-rec']):'';?>
@@ -357,6 +361,7 @@ $class_modifikator = get_field('vybor_napravleniya');
                 <?php endif;?>
             </div>
         </div>
+        <div class="slider-hr"></div>
     </section>
 
     <!-- END CONTENT-->

@@ -6,7 +6,7 @@
  * Time: 21:15
  */
 ?>
-    <div class="separator-row bg-purple mt-5"></div>
+    <div class="separator-row bg-purple"></div>
     <div class="separator-row bg-green"></div>
     <div class="separator-row bg-yellow"></div>
     <footer class="footer">

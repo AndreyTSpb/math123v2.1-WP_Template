@@ -14,7 +14,7 @@
                     <a href="/"><img src="<?php bloginfo('template_url');?>/assets/img/logo-2.png" alt="" srcset=""></a>
                 </div>
                 <div class="header-left-phone">
-                    <a href="tel:+78129863171"> <i class="fas fa-phone-alt"></i> +8 (812) 986-31-71</a>
+                    <a href="tel:+78129863171"> +7 (812) 986-31-71</a>
                     <span>10:00-17:00</span>
                 </div>
             </div>

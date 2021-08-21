@@ -27,17 +27,17 @@ echo apply_filters('the_content', get_post_meta($post->ID, 'zapis_v_grupu', true
 
                 <a href="<?=get_field('about_us')['link_cyrcle_1']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/lamp-1.png" alt="" srcset="">
-                    <p>развитие интеллекта<br> и мышление</p>
+                    <p>развитие <br>интеллекта<br> и мышление</p>
                 </a>
                 
                 <a href="<?=get_field('about_us')['link_cyrcle_2']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/uspeh.png" alt="" srcset="" style="width: 54px; height: 55px;">
-                    <p>перспектива успеха</p>
+                    <p>перспектива <br>успеха</p>
                 </a>
                 
                 <a href="<?=get_field('about_us')['link_cyrcle_3']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/oculus.png" alt="" srcset="" style="width: 91px; height: 36px; margin-top: 10px;">
-                    <p>увлеченные преподаватели</p>
+                    <p>увлеченные <br>преподаватели</p>
                 </a>
                 
             </div>
@@ -60,12 +60,12 @@ echo apply_filters('the_content', get_post_meta($post->ID, 'zapis_v_grupu', true
                 
                 <a href="<?=get_field('about_us')['link_cyrcle_1']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/lamp-1.png" alt="" srcset="" style="width: 49px; height: 51px;">
-                    <p>развитие интеллекта<br> и мышление</p>
+                    <p>развитие <br>интеллекта<br> и мышление</p>
                 </a>
                 
                 <a href="<?=get_field('about_us')['link_cyrcle_2']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/uspeh.png" alt="" srcset="" style="width: 49px; height: 51px;">
-                    <p>перспектива успеха</p>
+                    <p>перспектива <br>успеха</p>
                 </a>
                 
             </div>
@@ -74,7 +74,7 @@ echo apply_filters('the_content', get_post_meta($post->ID, 'zapis_v_grupu', true
                 
                 <a href="<?=get_field('about_us')['link_cyrcle_3']['url'];?>" class="about-us-circle yelow-frame radius">
                     <img src="<?php bloginfo('template_url');?>/assets/img/oculus.png" alt="" srcset="" style="width: 91px; height: 36px; margin-top: 10px;">
-                    <p>увлеченные преподаватели</p>
+                    <p>увлеченные <br>преподаватели</p>
                 </a>
 
             </div>
@@ -130,16 +130,19 @@ echo apply_filters('the_content', get_post_meta($post->ID, 'zapis_v_grupu', true
         <h2 class="text-white">наши УЧАЩИЕСЯ ПОБЕЖДАЮТ НА ОЛИМПИАДАХ</h2>
         <a href="<?= get_field('nashi_uchashhiesya_pobezhdayut_na_olimpiadah')['link'];?>"><img src="<?= get_field('nashi_uchashhiesya_pobezhdayut_na_olimpiadah')['img']['url'];?>" alt="" srcset=""></a>
     </section>
+    <div class="slider-hr"></div>
 
     <!-- НАШИ ПРЕПОДАВАТЕЛИ -->
     <?= apply_filters('the_content', get_post_meta($post->ID, 'teachers', true));?>
+
+    <div class="slider-hr"></div>
 
     <!-- MAPS -->
     <section class="maps">
         <div class="container">
             <h2><?= get_field('maps')['title'];?></h2>
                 <?= do_shortcode(get_field('maps')['short-code-map']);?>
-            <div class="maps-new-place">
+            <!--div class="maps-new-place">
                 <h4>Не нашли нас рядом с домом?</h4>
                 <div class="maps-new-place-form">
                     <form action="">
@@ -155,7 +158,7 @@ echo apply_filters('the_content', get_post_meta($post->ID, 'zapis_v_grupu', true
                         <button type="submit" class="btn-sub">напишите нам</button>
                     </form>
                 </div>
-            </div>
+            </div-->
         </div>
     </section>
     <div class="slider-hr"></div>
